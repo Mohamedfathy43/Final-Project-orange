@@ -1,0 +1,27 @@
+- name: Install and run Docker on machines
+  hosts: web
+  become: true
+  become_user: root
+
+  tasks:
+
+    - name: Upgrade all packages on servers
+      shell: dnf upgrade -y
+
+    - name: Set up docker repository
+      shell: |
+        dnf install -y yum-utils
+        yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+    - name: Install the latest version of Docker Engine and containerd
+      shell: dnf install -y docker-ce docker-ce-cli containerd.io
+
+    - name: Add the current user to the docker group
+      shell: usermod -aG docker {{ ansible_env.USER }}
+
+    - name: Start and enable docker service
+      shell: systemctl enable --now docker
+
+    - name: Run Docker container from web-image image
+      shell: docker run -d --name web-app  sleep infinity
+
