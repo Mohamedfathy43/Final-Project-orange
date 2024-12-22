@@ -23,5 +23,5 @@
       shell: systemctl enable --now docker
 
     - name: Run Docker container from web-image image
-      shell: docker run -d --name mohamedfathy23/web-app  sleep infinity
+      shell: docker run -d --name mohamedfathy23/web-app  
 
