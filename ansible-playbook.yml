@@ -4,7 +4,6 @@
   become_user: root
 
   tasks:
-
     - name: Upgrade all packages on servers
       shell: dnf upgrade -y
 
@@ -22,8 +21,12 @@
     - name: Start and enable docker service
       shell: systemctl enable --now docker
 
-    - name: Pull and run Docker container from web-image image
-      shell: |
-        docker pull mohamedfathy23/web-app
-        docker run -d -p 5000:5000 --name web-app mohamedfathy23/web-app
+    - name: Remove existing container if it exists
+      shell: docker rm -f web-app || true
+
+    - name: Pull the Docker image
+      shell: docker pull mohamedfathy23/web-app
+
+    - name: Run Docker container from web-image image
+      shell: docker run -d -p 5000:5000 --name web-app mohamedfathy23/web-app
 
