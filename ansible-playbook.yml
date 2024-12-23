@@ -28,5 +28,5 @@
       shell: docker pull mohamedfathy23/web-app
 
     - name: Run Docker container from web-image image
-      shell: docker run -d -p 5000:5000 --name web-app mohamedfathy23/web-app
+      shell: docker run -d --name web-app -p 5000:5000 mohamedfathy23/web-app
 
