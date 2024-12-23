@@ -45,8 +45,7 @@ The pipeline performs the following steps:
      - Pull and run the Docker container.
 
 
-``` 
-```
+
 
 ### Ansible Playbook
 - Installs Docker.
@@ -55,27 +54,26 @@ The pipeline performs the following steps:
 - Runs the container.
 
 
-```
-```
 
 
-```
+
+
 
 ---
 
 ## Steps to Run
 
-1. **Set Up SSH**:
+1. Set Up SSH**:
    - Ensure SSH keys are configured for passwordless access from the Master to the Slave VM.
 
-2. **Configure Jenkins**:
+2. Configure Jenkins**:
    - Add credentials for GitHub and Docker Hub.
    - Set up the pipeline using the `Jenkinsfile`.
 
-3. **Run the Pipeline**:
+3. Run the Pipeline**:
    - Trigger the pipeline and monitor its execution in Jenkins.
 
-4. **Verify Deployment**:
+4. Verify Deployment**:
    - Check the Slave VM to confirm the Docker container is running:
      ```bash
      docker ps
@@ -85,9 +83,9 @@ The pipeline performs the following steps:
 
 ## Troubleshooting
 
-- **Permission Issues**: Ensure the `deployer` user has sufficient privileges.
-- **SSH Failures**: Verify SSH configuration and key access.
-- **Ansible Errors**: Debug playbook execution using `-vvv` flag.
+- Permission Issues**: Ensure the `deployer` user has sufficient privileges.
+- SSH Failures**: Verify SSH configuration and key access.
+- Ansible Errors**: Debug playbook execution using `-vvv` flag.
 
 ---
 
