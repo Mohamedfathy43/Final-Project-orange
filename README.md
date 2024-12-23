@@ -95,6 +95,14 @@ This project simplifies the process of deploying Docker containers using Jenkins
                                                Jenkins Pipeline Execution
 
 
+![diagram-export-12-23-2024-4_10_00-PM](https://github.com/user-attachments/assets/dfea2db3-3e8e-4fcc-b2c6-93297adcbd44)
+
+
+
+
+                                               
+
+
 
 ![Screenshot 2024-12-23 071507](https://github.com/user-attachments/assets/ce3fce65-0868-4401-8418-d64f6e9d9456)
 
