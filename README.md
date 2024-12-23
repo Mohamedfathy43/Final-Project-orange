@@ -93,3 +93,21 @@ The pipeline performs the following steps:
 This project simplifies the process of deploying Docker containers using Jenkins and Ansible, providing a robust CI/CD workflow that can be extended to larger-scale deployments.
 
                                                Jenkins Pipeline Execution
+
+
+
+![Screenshot 2024-12-23 071507](https://github.com/user-attachments/assets/ce3fce65-0868-4401-8418-d64f6e9d9456)
+
+
+
+
+
+![Screenshot 2024-12-23 071649](https://github.com/user-attachments/assets/01e5a3b0-d58e-4357-8cd7-08625f7f71c2)
+
+
+
+
+
+
+![app](https://github.com/user-attachments/assets/4448f0d8-8d61-4486-b8f6-fcb9bb6d7d0c)
+
